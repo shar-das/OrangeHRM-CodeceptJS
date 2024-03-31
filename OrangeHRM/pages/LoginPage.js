@@ -26,8 +26,23 @@ module.exports = {
 
     //TEST DATA
     validUser: {
-        username: utilsConstants.credentials.validUser.username,
-        password: utilsConstants.credentials.validUser.password,
+        username: utilsConstants.credentials.valid.username,
+        password: utilsConstants.credentials.valid.password,
+    },
+
+    invalidUserWrongUsername: {
+        username: utilsConstants.credentials.invalid.username,
+        password: utilsConstants.credentials.valid.password,
+    },
+
+    invalidUserWrongPassword: {
+        username: utilsConstants.credentials.valid.username,
+        password: utilsConstants.credentials.invalid.password,
+    },
+
+    invalidUserWrongUsernameAndPassword: {
+        username: utilsConstants.credentials.invalid.username,
+        password: utilsConstants.credentials.invalid.password,
     },
 
     //METHODS

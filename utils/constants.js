@@ -6,9 +6,13 @@ module.exports = {
     },
     
     credentials: {
-        validUser: {
+        valid: {
             username: 'Admin',
             password: 'admin123',
+        },
+        invalid: {
+            username: 'admin$$',
+            password: 'admin12$$',
         },
     },
 
